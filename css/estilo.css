@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: #1d1c1c;
+
+}
+
+
+body {
+    background-color: #1d1c1c;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    height: 30px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.1fr 0.9fr 1fr 0.9fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        "tituloFooter tituloFooter logoFooter redes"
+        "contactoTelefono telefono logoFooter redes"
+        "contactoMail mail logoFooter redes";
+}
+
+.tituloFooter {
+    grid-area: tituloFooter;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 60px;
+}
+
+.contactoTelefono {
+    grid-area: contactoTelefono;
+    display: flex;
+    align-content: flex-start;
+    width: 20px;
+    height: 20px;
+    padding-left: 60px;
+}
+
+.telefono {
+    grid-area: telefono;
+    padding-left: 10px;
+}
+
+.contactoMail {
+    grid-area: contactoMail;
+    width: 20px;
+    height: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.mail {
+    grid-area: mail;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.logoFooter {
+    grid-area: logoFooter;
+    width: 100px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+.redes {
+    grid-area: redes;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+.iconos {
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.whatsapp {
+    padding-right: 60px;
+}
+
+h1,
+h2 {
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 20px;
+    padding-top: 55px;
+}
+
+h2 {
+    padding-bottom: 40px;
+}
+
+h3 {
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    padding: 20px;
+}
+
+.porfolioRT2 {
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+    padding: 20px;
+}
+
+p {
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+form {
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+}
+
+li:hover {
+    border-bottom: solid darkred 4px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.contacto {
+    width: 200px;
+    height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 30px;
+    align-content: center;
+
+}
+
+.rolling {
+    width: 200px;
+    border: none;
+    border-radius: 2%;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.logoHeader {
+    width: 80px;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.imagenContacto {
+    width: 300px;
+    padding: 20 px;
+    margin: 10px;
+    padding-top: 50px;
+}
+
+.certificacionMeta {
+    width: 200px;
+    padding: 20 px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 10px;
+}
+
+.certificacionGoogle {
+    width: 150px;
+    padding: 20 px;
+    margin: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.seccionContacto {
+    display: grid;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
+    grid-template-rows: 0.6fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "hombre textoContacto mujer"
+        "hombre botonUno mujer";
+    background-image: url(../img/patronContacto.png);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.hombre {
+    grid-area: hombre;
+}
+
+.textoContacto {
+    grid-area: textoContacto;
+}
+
+.botonUno {
+    grid-area: botonUno;
+
+}
+
+.mujer {
+    grid-area: mujer;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+
+}
+
+.textoQuienes {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.imagenQuienes {
+    width: 400px;
+    height: auto;
+}
+
+.seccionCert {
+    background-color: #470101;
+}
+
+.textoCert {
+    width: 1000px;
+    padding: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.logosCert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.imagenServicio {
+    width: 350px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 10px;
+}
+
+.tituloServicios {
+    height: 250px;
+    width: 100vw;
+    background-image: url(../img/servicios.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: center;
+    justify-content: center;
+}
+
+.flechaAbajo {
+    width: 100px;
+}
+
+.nuestrosServicios {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 0.5fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        "textoConsultoria consultoria"
+        "redesSociales textoRedes "
+        "textoDiseño diseñoWeb"
+        "emailing textoMailing";
+}
+
+.consultoria {
+    grid-area: consultoria;
+}
+
+.textoConsultoria {
+    grid-area: textoConsultoria;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoRedes {
+    grid-area: textoRedes;
+    display: flex;
+    flex-direction: column;
+}
+
+.redesSociales {
+    grid-area: redesSociales;
+}
+
+.textoDiseño {
+    grid-area: textoDiseño;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.diseñoWeb {
+    grid-area: diseñoWeb;
+    width: 300px;
+}
+
+.textoMailing {
+    grid-area: textoMailing;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    margin: 20px;
+}
+
+.emailing {
+    grid-area: emailing;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.nuestrosServicios p {
+    width: 500px;
+}
+
+.contactoServicios {
+    background-color: #470101;
+    height: 250px;
+
+}
+
+.trabajemosJuntos {
+    width: 100vw;
+    padding: 60px;
+
+}
+
+.hombreTrabajos {
+    width: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+
+}
+
+.nuestrosTrabajos {
+    background-image: url(../img/fondoCert.png);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;
+
+}
+
+.clientes {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        "clienteUno"
+        "clienteDos"
+        "clienteTres";
+    margin-top: 40px;
+
+
+}
+
+.clienteUno {
+    grid-area: clienteUno;
+    display: flex;
+    align-items: center;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    background-color: #470101;
+    margin: 20px;
+
+}
+
+.clienteDos {
+    grid-area: clienteDos;
+    display: flex;
+    align-items: center;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    background-color: #470101;
+    margin: 20px;
+
+}
+
+.clienteTres {
+    grid-area: clienteTres;
+    display: flex;
+    align-items: center;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    background-color: #470101;
+    margin: 20px;
+}
+
+.logoCliente {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.trabajoCliente {
+    width: 700px;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: #ffffff solid 2px;
+}
+
+.opinionUno {
+    width: 300px;
+    background-color: #470101;
+    border-radius: 10px;
+    border: #ffffff solid 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-area: opinionUno;
+}
+
+.opinionDos {
+    width: 300px;
+    background-color: #470101;
+    border-radius: 10px;
+    border: #ffffff solid 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-area: opinionDos;
+}
+
+.opinionTres {
+    width: 300px;
+    background-color: #470101;
+    border-radius: 10px;
+    border: #ffffff solid 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-area: opinionTres;
+}
+
+.nuestrosClientes p {
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.rolling {
+    padding-top: 40px;
+}
+
+.nuestrosClientes {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "opinionUno opinionDos opinionTres";
+    margin-bottom: 40px;
+
+}
+
+.bannerBlog {
+    background-image: url(../img/patronBlog.png);
+    height: 400px;
+    background-repeat: repeat;
+    background-size: contain;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "imagenBlog tituloBlog"
+        "imagenBlog textoBlog";
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenBlog {
+    grid-area: imagenBlog;
+    width: 300px;
+    margin: 30px;
+    margin-left: 100px;
+}
+
+.tituloBlog {
+    grid-area: tituloBlog;
+    padding: 30px;
+    margin-top: 60px;
+    margin-right: 300px;
+}
+
+.textoBlog {
+    grid-area: textoBlog;
+    width: 800px;
+    margin-right: 290px;
+    margin-bottom: 70px;
+}
+
+.notas {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "notaUno notaDos";
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.notaUno {
+    grid-area: notaUno;
+
+}
+
+.notaDos {
+    grid-area: notaDos;
+}
+
+.form-floating {
+    width: 500px;
+    margin-top: 15px;
+}
+
+.form-select {
+    width: 500px;
+    margin-left: 9px;
+}
+
+.origen {
+    margin-top: 15px;
+}
+
+#formGroupExampleInput3 {
+    margin-left: 9px;
+}
+
+.form-control {
+    width: 500px;
+}
+
+.empresa {
+    margin-bottom: 40px;
+}
+
+.cuerpo {
+    background-color: #470101;
+    display: grid;
+    grid-auto-columns: 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.3fr 0.7fr;
+    gap: 0px;
+    grid-template-areas:
+        "imagenFormulario formularioContacto"
+        "tituloFormulario formularioContacto"
+        "textoFormulario formularioContacto";
+    font-family: "Open Sans", sans-serif;
+}
+
+.imagenFormulario {
+    width: 250px;
+    grid-area: imagenFormulario;
+    margin-left: 200px;
+    padding: 0px;
+}
+
+.tituloFormulario {
+    grid-area: tituloFormulario;
+    padding: 0px;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 0px;
+    font-size: 2rem;
+
+}
+
+.textoFormulario {
+    grid-area: textoFormulario;
+    width: 600px;
+    font-size: 0.9rem;
+    display: flex;
+    align-content: flex-start;
+    margin-left: 18px;
+    margin-bottom: 100px;
+}
+
+.formularioContacto {
+    grid-area: formularioContacto;
+    margin-left: 20px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .nuestrosClientes {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "opinionUno"
+            "opinionDos"
+            "opinionTres";
+
+    }
+    .opinionUno{
+        margin-bottom: 20px;
+    }
+    .opinionDos{
+        margin-bottom: 20px;
+    }
+    .nuestrosServicios {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "textoConsultoria" 
+            "consultoria"
+            "textoRedes "
+            "redesSociales"
+            "textoDiseño "
+            "diseñoWeb"
+            "textoMailing"
+            "emailing";
+        text-align: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .nuestrosServicios img{
+        margin: 10px;
+        padding: 10px;
+        margin-left: 100px;
+    }
+    .nuestrosServicios p{
+        margin: 10px;
+        padding: 10px;
+        
+}
+}
