@@ -480,6 +480,22 @@ span {
     margin-left: 80px;
     margin-right: 80px;
 }
+.logoClienteDos {
+    width: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.logoClienteTres{
+    width: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
 
 .trabajoCliente {
     width: 700px;
