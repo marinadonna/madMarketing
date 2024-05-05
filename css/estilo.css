@@ -2,18 +2,15 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #1d1c1c;
 }
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 footer {
     height: 30px;
     display: grid;
@@ -26,7 +23,6 @@ footer {
         "contactoTelefono telefono logoFooter redes"
         "contactoMail mail logoFooter redes";
 }
-
 .tituloFooter {
     grid-area: tituloFooter;
     padding: 20px;
@@ -34,7 +30,6 @@ footer {
     font-weight: bold;
     padding-left: 60px;
 }
-
 .contactoTelefono {
     grid-area: contactoTelefono;
     display: flex;
@@ -43,12 +38,10 @@ footer {
     height: 20px;
     padding-left: 60px;
 }
-
 .telefono {
     grid-area: telefono;
     padding-left: 10px;
 }
-
 .contactoMail {
     grid-area: contactoMail;
     width: 20px;
@@ -57,13 +50,11 @@ footer {
     padding-top: 10px;
     padding-bottom: 30px;
 }
-
 .mail {
     grid-area: mail;
     padding-top: 10px;
     padding-left: 10px;
 }
-
 .logoFooter {
     grid-area: logoFooter;
     width: 100px;
