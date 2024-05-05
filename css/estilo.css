@@ -258,6 +258,7 @@ ul ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    
 }
 
 .hombre {
@@ -295,13 +296,16 @@ span {
 
 .seccionCert {
     background-color: #470101;
+    width: 100vw;
+    
 }
 
 .textoCert {
     width: 1000px;
     padding: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 250px;
+    
+
 }
 
 .logosCert {
@@ -405,14 +409,12 @@ span {
 
 .trabajemosJuntos {
     width: 100vw;
-    padding: 60px;
+
 
 }
 
 .hombreTrabajos {
     width: 300px;
-    margin-left: 300px;
-    margin-right: 300px;
     padding: 5px;
 
 }
@@ -695,8 +697,7 @@ span {
 }
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: center;
+        position: relative;
 
     }
 
@@ -747,5 +748,31 @@ span {
         margin: 10px;
         padding: 10px;
         
+    }
+    .textoCert {
+        width: 500px;
+        padding: 10px;
+        margin-left: 80px;
+        
+    
+    }
+    .seccionContacto {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "hombre textoContacto"
+        "hombre botonUno";    
+        background-size: contain;
+    }
+    .mujer{
+        visibility: hidden;
+    }
+    .hombre{
+        margin-left: 250px;
+    }
+    
+    .textoContacto{
+        width: 350px;
+        margin-top: 30px;
+    }
 }
-}
+  
