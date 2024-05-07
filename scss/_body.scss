@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #1d1c1c;
+    h1 {
+        color: aliceblue;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        padding: 20px;
+        padding-top: 55px;
+    }
+    h2 {
+        padding-bottom: 40px;
+        color: aliceblue;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        padding: 20px;
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+    h3 {
+        color: aliceblue;
+        font-family: "Open Sans", sans-serif;
+        text-align: left;
+        padding: 20px;
+    }
+    p {
+        color: aliceblue;
+        font-family: "Open Sans", sans-serif;
+    }
+    a {
+        color: aliceblue;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+    }
+    .contacto {
+        width: 200px;
+        height: 50px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #000000;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        margin: 40px;
+        align-content: center;
+    }
+}

@@ -1,0 +1,21 @@
+header {
+    ul {
+        list-style: none;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    li {
+        display: inline-block;
+        position: relative;
+        font-family: "Open Sans", sans-serif;
+        padding: 20px;
+        &:hover {
+            border-bottom: solid darkred 4px;
+        }
+    }
+    ul ul {
+        position: absolute;
+        display: none;
+        font-family: "Open Sans", sans-serif;
+    }
+}

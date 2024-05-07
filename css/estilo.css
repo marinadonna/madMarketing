@@ -233,6 +233,10 @@ main .seccionCert .logosCert .certificacionGoogle {
 }
 .tituloServicios .flechaAbajo {
   width: 100px;
+  transition: all 1s;
+}
+.tituloServicios .flechaAbajo:hover {
+  transform: translate(0px, 20px);
 }
 
 .nuestrosServicios {

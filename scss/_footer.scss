@@ -1,0 +1,67 @@
+footer {
+    height: 30px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.1fr 0.9fr 1fr 0.9fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        "tituloFooter tituloFooter logoFooter redes"
+        "contactoTelefono telefono logoFooter redes"
+        "contactoMail mail logoFooter redes";
+    .tituloFooter {
+        grid-area: tituloFooter;
+        padding: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 60px;
+    }
+    .contactoTelefono {
+        grid-area: contactoTelefono;
+        display: flex;
+        align-content: flex-start;
+        width: 20px;
+        height: 20px;
+        padding-left: 60px;
+    }
+    .telefono {
+        grid-area: telefono;
+        padding-left: 10px;
+    }
+    .contactoMail {
+        grid-area: contactoMail;
+        width: 20px;
+        height: 20px;
+        padding-left: 60px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .mail {
+        grid-area: mail;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .logoFooter {
+        grid-area: logoFooter;
+        width: 100px;
+        margin: 10px;
+        padding-top: 20px;
+        padding-left: 150px;
+    }
+    .redes {
+        grid-area: redes;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 50px;
+        .iconos {
+            width: 50px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .whatsapp {
+            padding-right: 60px;
+        }
+    }
+}
