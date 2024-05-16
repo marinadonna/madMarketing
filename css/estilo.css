@@ -677,6 +677,66 @@ footer .redes .whatsapp {
     justify-self: center;
     margin-bottom: 30px;
   }
+  footer {
+    height: 30px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px 0px;
+    grid-template-areas: "tituloFooter tituloFooter logoFooter" "contactoTelefono telefono logoFooter" "contactoMail mail logoFooter" "redes redes redes";
+  }
+  footer .tituloFooter {
+    grid-area: tituloFooter;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 60px;
+  }
+  footer .contactoTelefono {
+    grid-area: contactoTelefono;
+    display: flex;
+    align-content: flex-start;
+    width: 20px;
+    height: 20px;
+    padding-left: 60px;
+  }
+  footer .telefono {
+    grid-area: telefono;
+    padding-left: 10px;
+  }
+  footer .contactoMail {
+    grid-area: contactoMail;
+    width: 20px;
+    height: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  footer .mail {
+    grid-area: mail;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  footer .logoFooter {
+    grid-area: logoFooter;
+    width: 100px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+  footer .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  footer .redes .iconos {
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
