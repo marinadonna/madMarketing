@@ -14,7 +14,7 @@ body {
   background-color: #1d1c1c;
 }
 body h1 {
-  color: aliceblue;
+  color: #f0f8ff;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 20px;
@@ -22,7 +22,7 @@ body h1 {
 }
 body h2 {
   padding-bottom: 40px;
-  color: aliceblue;
+  color: #f0f8ff;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 20px;
@@ -30,17 +30,17 @@ body h2 {
   padding-bottom: 40px;
 }
 body h3 {
-  color: aliceblue;
+  color: #f0f8ff;
   font-family: "Open Sans", sans-serif;
   text-align: left;
   padding: 20px;
 }
 body p {
-  color: aliceblue;
+  color: #f0f8ff;
   font-family: "Open Sans", sans-serif;
 }
 body a {
-  color: aliceblue;
+  color: #f0f8ff;
   text-decoration: none;
   list-style: none;
   text-align: center;
@@ -190,7 +190,7 @@ main .nuestrosClientes .amtae {
   padding: 20px;
   margin: 10px;
   margin-top: 75px;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 main .seccionCert {
   background-color: #470101;
@@ -369,17 +369,17 @@ main .seccionCert .logosCert .certificacionGoogle {
   margin-right: 80px;
 }
 .clientes .logoClienteDos {
+  border-radius: 50%;
   width: 200px;
   padding: 20px;
-  border-radius: 50%;
   margin: 20px;
   margin-left: 80px;
   margin-right: 80px;
 }
 .clientes .logoClienteTres {
+  border-radius: 50%;
   width: 200px;
   padding: 20px;
-  border-radius: 50%;
   margin: 20px;
   margin-left: 80px;
   margin-right: 80px;
@@ -563,6 +563,120 @@ footer .redes .iconos {
 }
 footer .redes .whatsapp {
   padding-right: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .nuestrosClientes {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "opinionUno" "opinionDos" "opinionTres";
+  }
+  .nuestrosClientes .opinionUno, .nuestrosClientes .opinionDos {
+    margin-bottom: 20px;
+  }
+  .nuestrosServicios {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    gap: 0px 0px;
+    grid-template-areas: "textoConsultoria" "consultoria" "textoRedes" "redesSociales" "textoDiseño " "diseñoWeb" "textoMailing" "emailing";
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .nuestrosServicios img {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 100px;
+  }
+  .nuestrosServicios p {
+    margin: 10px;
+    padding: 10px;
+  }
+  .textoCert {
+    width: 300px;
+    padding: 10px;
+    margin-left: 80px;
+  }
+  .seccionContacto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hombre textoContacto" "hombre botonUno";
+    background-size: contain;
+  }
+  .seccionContacto .mujer {
+    visibility: hidden;
+  }
+  .seccionContacto .hombre {
+    margin-left: 250px;
+  }
+  .seccionContacto .textoContacto {
+    width: 350px;
+    margin-top: 30px;
+  }
+  .clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clientes .clienteUno, .clientes .clienteDos, .clientes .clienteTres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clientes .clienteUno .trabajoCliente, .clientes .clienteUno .trabajoClienteDos, .clientes .clienteUno .trabajoClienteTres, .clientes .clienteDos .trabajoCliente, .clientes .clienteDos .trabajoClienteDos, .clientes .clienteDos .trabajoClienteTres, .clientes .clienteTres .trabajoCliente, .clientes .clienteTres .trabajoClienteDos, .clientes .clienteTres .trabajoClienteTres {
+    width: 600px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .bannerBlog .imagenBlog {
+    width: 200px;
+    margin: 30px;
+    margin-left: 50px;
+  }
+  .bannerBlog .tituloBlog {
+    grid-area: tituloBlog;
+    padding: 30px;
+    margin-top: 60px;
+    margin-right: 300px;
+  }
+  .bannerBlog .textoBlog {
+    grid-area: textoBlog;
+    width: 400px;
+    margin-bottom: 70px;
+  }
+  .notas {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "notaUno" "notaDos";
+  }
+  .cuerpo {
+    background-color: #470101;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px;
+    grid-template-areas: "imagenFormulario" "tituloFormulario" "textoFormulario" "formularioContacto";
+  }
+  .cuerpo .textoFormulario {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+  .cuerpo .formularioContacto {
+    margin-left: 100px;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

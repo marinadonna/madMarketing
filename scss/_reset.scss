@@ -8,9 +8,9 @@
     box-sizing: inherit;
 }
 body {
-    background-color: #1d1c1c;
+    background-color: $negro;
     h1 {
-        color: aliceblue;
+        color: $blanco;
         font-family: "Open Sans", sans-serif;
         text-align: center;
         padding: 20px;
@@ -18,7 +18,7 @@ body {
     }
     h2 {
         padding-bottom: 40px;
-        color: aliceblue;
+        color: $blanco;
         font-family: "Open Sans", sans-serif;
         text-align: center;
         padding: 20px;
@@ -26,17 +26,17 @@ body {
         padding-bottom: 40px;
     }
     h3 {
-        color: aliceblue;
+        color: $blanco;
         font-family: "Open Sans", sans-serif;
         text-align: left;
         padding: 20px;
     }
     p {
-        color: aliceblue;
+        color: $blanco;
         font-family: "Open Sans", sans-serif;
     }
     a {
-        color: aliceblue;
+        color: $blanco;
         text-decoration: none;
         list-style: none;
         text-align: center;

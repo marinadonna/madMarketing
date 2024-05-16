@@ -667,11 +667,9 @@ span {
         position: relative;
 
     }
-
     h1 {
         font-size: 1.3rem;
     }
-
     .nuestrosClientes {
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr;
@@ -719,9 +717,7 @@ span {
     .textoCert {
         width: 500px;
         padding: 10px;
-        margin-left: 80px;
-        
-    
+        margin-left: 80px; 
     }
     .seccionContacto {
         grid-template-columns: 1fr 1fr;

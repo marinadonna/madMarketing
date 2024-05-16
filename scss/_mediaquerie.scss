@@ -1,91 +1,134 @@
-$vista: desktop;
-
-body {
-    @if $vista ==mobile {
-        @media only screen and (max-width:767px) {
-            header {
-                position: relative;
-            }
-
-            h1 {
-                font-size: 1.3rem;
-            }
-
-            .nuestrosClientes {
-                grid-auto-columns: 1fr;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto auto auto;
-                grid-template-areas:
-                    "opinionUno"
-                    "opinionDos"
-                    "opinionTres";
-            }
-
-            .opinionUno {
-                margin-bottom: 20px;
-            }
-
-            .opinionDos {
-                margin-bottom: 20px;
-            }
-
-            .nuestrosServicios {
-                grid-auto-columns: 1fr;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(8, auto);
-                gap: 0px 0px;
-                grid-template-areas:
-                    "textoConsultoria"
-                    "consultoria"
-                    "textoRedes "
-                    "redesSociales"
-                    "textoDiseño "
-                    "diseñoWeb"
-                    "textoMailing"
-                    "emailing";
-                text-align: center;
-                align-content: center;
-                flex-direction: column;
-            }
-
-            .nuestrosServicios img {
-                margin: 10px;
-                padding: 10px;
-                margin-left: 100px;
-            }
-
-            .nuestrosServicios p {
-                margin: 10px;
-                padding: 10px;
-            }
-
-            .textoCert {
-                width: 500px;
-                padding: 10px;
-                margin-left: 80px;
-            }
-
-            .seccionContacto {
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                    "hombre textoContacto"
-                    "hombre botonUno";
-                background-size: contain;
-            }
-
-            .mujer {
-                visibility: hidden;
-            }
-
-            .hombre {
-                margin-left: 250px;
-            }
-
-            .textoContacto {
-                width: 350px;
-                margin-top: 30px;
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .nuestrosClientes {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "opinionUno"
+            "opinionDos"
+            "opinionTres";
+        .opinionUno, .opinionDos {
+            margin-bottom: 20px;
+        }
+    }
+    .nuestrosServicios {
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+            "textoConsultoria" 
+            "consultoria"
+            "textoRedes"
+            "redesSociales"
+            "textoDiseño "
+            "diseñoWeb"
+            "textoMailing"
+            "emailing";
+        text-align: center;
+        align-content: center;
+        flex-direction: column;
+        img {
+            margin: 10px;
+            padding: 10px;
+            margin-left: 100px;
+        }
+        p {
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    .textoCert {
+        width: 300px;
+        padding: 10px;
+        margin-left: 80px;
+    }
+    .seccionContacto {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "hombre textoContacto"
+            "hombre botonUno";    
+        background-size: contain;
+        .mujer {
+            visibility: hidden;
+        }
+        .hombre {
+            margin-left: 250px;
+        }
+        .textoContacto {
+            width: 350px;
+            margin-top: 30px;
+        }
+    }
+    .clientes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .clienteUno, .clienteDos, .clienteTres {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            .trabajoCliente, .trabajoClienteDos, .trabajoClienteTres {
+                width: 600px;
+                margin: 20px;
+                margin-left: 40px;
+                margin-right: 40px;
             }
         }
     }
-
+    .bannerBlog {
+        .imagenBlog {
+            width: 200px;
+            margin: 30px;
+            margin-left: 50px;
+        }
+        .tituloBlog {
+            grid-area: tituloBlog;
+            padding: 30px;
+            margin-top: 60px;
+            margin-right: 300px;
+        }
+        .textoBlog {
+            grid-area: textoBlog;
+            width: 400px;
+            margin-bottom: 70px;
+        }
+    }
+    .notas {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+            "notaUno"
+            "notaDos";
+    }
+    .cuerpo {
+        background-color: $bordo;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px;
+        grid-template-areas:
+            "imagenFormulario"
+            "tituloFormulario"
+            "textoFormulario" 
+            "formularioContacto";
+        .textoFormulario {
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            margin-bottom: 30px;
+        }
+        .formularioContacto {
+            margin-left: 100px;
+            justify-self: center;
+            margin-bottom: 30px;
+        }
+    }
 }

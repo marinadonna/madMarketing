@@ -57,30 +57,15 @@ main {
             "opinionUno opinionDos opinionTres";
         margin-bottom: 40px;
         .opinionUno {
-            width: 300px;
-            background-color: #470101;
-            border-radius: 10px;
-            border: #ffffff solid 2px;
-            margin-left: 20px;
-            margin-right: 20px;
+            @include opiniones;
             grid-area: opinionUno;
         }
         .opinionDos {
-            width: 300px;
-            background-color: #470101;
-            border-radius: 10px;
-            border: #ffffff solid 2px;
-            margin-left: 20px;
-            margin-right: 20px;
+            @include opiniones;
             grid-area: opinionDos;
         }
         .opinionTres {
-            width: 300px;
-            background-color: #470101;
-            border-radius: 10px;
-            border: #ffffff solid 2px;
-            margin-left: 20px;
-            margin-right: 20px;
+            @include opiniones;
             grid-area: opinionTres;
         }
         p {
@@ -110,11 +95,11 @@ main {
             padding: 20px;
             margin: 10px;
             margin-top: 75px;
-            margin-bottom: 35px;
+            margin-bottom: 50px;
         }
     }
     .seccionCert {
-        background-color: #470101;
+        background-color: $bordo;
         min-width: 100%;
         .textoCert {
             width: 1000px;
@@ -230,7 +215,7 @@ main {
     }
 }
 .contactoServicios {
-    background-color: #470101;
+    background-color: $bordo;
     min-width: 100%;
     height: 250px;
 }
@@ -258,53 +243,26 @@ main {
     margin-top: 40px;
     .clienteUno {
         grid-area: clienteUno;
-        display: flex;
-        align-items: center;
-        border: #ffffff solid 2px;
-        border-radius: 10px;
-        background-color: #470101;
-        margin: 20px;
+        @include clientes;
     }  
     .clienteDos {
         grid-area: clienteDos;
-        display: flex;
-        align-items: center;
-        border: #ffffff solid 2px;
-        border-radius: 10px;
-        background-color: #470101;
-        margin: 20px;
+        @include clientes;
     }
     .clienteTres {
         grid-area: clienteTres;
-        display: flex;
-        align-items: center;
-        border: #ffffff solid 2px;
-        border-radius: 10px;
-        background-color: #470101;
-        margin: 20px;
+        @include clientes;
     }
     .logoCliente {
-        width: 200px;
-        padding: 20px;
-        margin: 20px;
-        margin-left: 80px;
-        margin-right: 80px;
+        @include logoClientes;
     }
     .logoClienteDos {
-        width: 200px;
-        padding: 20px;
         border-radius: 50%;
-        margin: 20px;
-        margin-left: 80px;
-        margin-right: 80px;
+        @include logoClientes;
     }
     .logoClienteTres{
-        width: 200px;
-        padding: 20px;
         border-radius: 50%;
-        margin: 20px;
-        margin-left: 80px;
-        margin-right: 80px;
+        @include logoClientes;
     }
     .trabajoCliente {
         width: 700px;
@@ -366,7 +324,7 @@ main {
     }
 }
 .cuerpo {
-    background-color: #470101;
+    background-color: $bordo;
     display: grid;
     grid-auto-columns: 2fr;
     grid-template-columns: repeat(2, 1fr);
