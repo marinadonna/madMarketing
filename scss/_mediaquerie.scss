@@ -3,20 +3,25 @@
         font-size: 1.2rem;
     }
     .nuestrosClientes {
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "opinionUno"
-            "opinionDos"
-            "opinionTres";
+    display: grid; // Añadido para activar grid layout
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "opinionUno"
+        "opinionDos"
+        "opinionTres";
         .opinionUno {
-            margin-bottom: 20px;
-        }
-        .opinionDos {
-            margin-bottom: 20px;
-        }
+        grid-area: opinionUno;
+        margin-bottom: 20px;
     }
+        .opinionDos {
+        grid-area: opinionDos;
+        margin-bottom: 20px;
+    }
+        .opinionTres {
+        grid-area: opinionTres;
+    }
+}
     .nuestrosServicios {
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr;
