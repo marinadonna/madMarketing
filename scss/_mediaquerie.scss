@@ -10,7 +10,10 @@
             "opinionUno"
             "opinionDos"
             "opinionTres";
-        .opinionUno, .opinionDos {
+        .opinionUno {
+            margin-bottom: 20px;
+        }
+        .opinionDos {
             margin-bottom: 20px;
         }
     }
