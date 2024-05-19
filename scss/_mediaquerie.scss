@@ -58,7 +58,7 @@
             }
             .textoContacto {
                 font-size: 1.3rem;
-                width: 400px;
+                width: 90%;
                 text-align: center;
                 margin-bottom: 0px;
             }
@@ -308,6 +308,7 @@
             "tituloFormulario"
             "textoFormulario"
             "formularioContacto";
+            align-items: center;
         .imagenFormulario {
             width: 50%;
             margin-left: auto;

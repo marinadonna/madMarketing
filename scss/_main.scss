@@ -311,7 +311,7 @@ main {
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 20px;
+    gap: 60px;
     grid-template-areas:
         "notaUno notaDos";
     align-items: center;
@@ -363,11 +363,11 @@ main {
         margin-left: 20px;
     }
     .form-floating {
-        width: 500px;
+        width: 400px;
         margin-top: 15px;
     }
     .form-select {
-        width: 500px;
+        width: 400px;
         margin-left: 9px;
     }
     .origen {
@@ -377,7 +377,7 @@ main {
         margin-left: 9px;
     }
     .form-control {
-        width: 500px;
+        width: 400px;
     }
     .empresa {
         margin-bottom: 40px;
