@@ -846,12 +846,12 @@ footer .redes .whatsapp {
   }
   .notas .notaUno,
   .notas .notaDos {
-    width: 350px;
+    width: 300px;
     margin: auto;
   }
   .notas .notaUno .imagenNota,
   .notas .notaDos .imagenNota {
-    width: 347px;
+    width: 297px;
   }
   .cuerpo {
     display: flex;

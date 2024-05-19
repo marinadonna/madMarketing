@@ -285,13 +285,12 @@
         grid-template-areas:
             "notaUno"
             "notaDos";
-
         .notaUno,
         .notaDos {
-            width: 350px;
+            width: 300px;
             margin: auto;
             .imagenNota{
-                width: 347px;
+                width: 297px;
             }
         }
     }
