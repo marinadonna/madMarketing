@@ -456,14 +456,14 @@ main .seccionCert .logosCert .certificacionGoogle {
 .cuerpo .imagenFormulario {
   width: 250px;
   grid-area: imagenFormulario;
-  margin-left: 200px;
+  margin-left: 300px;
   padding: 0px;
 }
 .cuerpo .tituloFormulario {
   grid-area: tituloFormulario;
   padding: 0px;
   width: 400px;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top: 0px;
   font-size: 2rem;
 }
@@ -473,7 +473,7 @@ main .seccionCert .logosCert .certificacionGoogle {
   font-size: 0.9rem;
   display: flex;
   align-content: flex-start;
-  margin-left: 18px;
+  margin-left: 118px;
   margin-bottom: 100px;
 }
 .cuerpo .formularioContacto {
@@ -481,11 +481,11 @@ main .seccionCert .logosCert .certificacionGoogle {
   margin-left: 20px;
 }
 .cuerpo .form-floating {
-  width: 400px;
+  width: 390px;
   margin-top: 15px;
 }
 .cuerpo .form-select {
-  width: 400px;
+  width: 390px;
   margin-left: 9px;
 }
 .cuerpo .origen {
@@ -495,7 +495,7 @@ main .seccionCert .logosCert .certificacionGoogle {
   margin-left: 9px;
 }
 .cuerpo .form-control {
-  width: 400px;
+  width: 390px;
 }
 .cuerpo .empresa {
   margin-bottom: 40px;
