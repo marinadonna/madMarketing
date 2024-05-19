@@ -488,9 +488,6 @@ main .seccionCert .logosCert .certificacionGoogle {
   width: 505px;
   margin-left: 9px;
 }
-.cuerpo .origen {
-  margin-top: 15px;
-}
 .cuerpo #formGroupExampleInput3 {
   margin-left: 9px;
 }
@@ -858,11 +855,6 @@ footer .redes .whatsapp {
   }
   .cuerpo {
     display: flex;
-    grid-auto-columns: 2fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 0px;
-    grid-template-areas: "imagenFormulario" "tituloFormulario" "textoFormulario" "formularioContacto";
     align-items: center;
     text-align: center;
   }
@@ -891,10 +883,8 @@ footer .redes .whatsapp {
   .cuerpo .formularioContacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
+    width: 300px;
     margin-left: 0px;
-    margin-right: 0px;
     margin-bottom: 10px;
   }
   .cuerpo .form-floating {
@@ -908,10 +898,6 @@ footer .redes .whatsapp {
     position: relative;
     margin-right: 5px;
   }
-  .cuerpo .origen {
-    margin-top: 0px;
-    position: relative;
-  }
   .cuerpo #formGroupExampleInput3 {
     margin-left: 9px;
     margin-bottom: 0px;
@@ -920,9 +906,6 @@ footer .redes .whatsapp {
   .cuerpo .form-control {
     width: 300px;
     position: relative;
-  }
-  .cuerpo .empresa {
-    margin-bottom: 15px;
   }
   footer {
     height: 30px;

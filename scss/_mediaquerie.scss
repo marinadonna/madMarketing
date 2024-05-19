@@ -140,7 +140,6 @@
                 align-items: center;
                 justify-content: center;
                 height: 100px;
-
                 .certificacionMeta {
                     width: 100px;
                     padding: 20px;
@@ -298,15 +297,6 @@
     }
     .cuerpo {
         display: flex;
-        grid-auto-columns: 2fr;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        gap: 0px;
-        grid-template-areas:
-            "imagenFormulario"
-            "tituloFormulario"
-            "textoFormulario"
-            "formularioContacto";
         align-items: center;
         text-align: center;
         .imagenFormulario {
@@ -334,10 +324,8 @@
         .formularioContacto {       
             display: flex;
             flex-direction: column;
-            align-items: center;
-            position: relative;
+            width: 300px;
             margin-left: 0px;
-            margin-right: 0px;
             margin-bottom: 10px;
         }
         .form-floating {
@@ -351,10 +339,6 @@
             position: relative;
             margin-right: 5px;
         }
-        .origen {
-            margin-top: 0px;
-            position: relative;
-        }
         #formGroupExampleInput3 {
             margin-left: 9px;
             margin-bottom: 0px;
@@ -363,9 +347,6 @@
         .form-control {
             width: 300px;
             position: relative;
-        }
-        .empresa {
-            margin-bottom: 15px;
         }
     }
     footer {
