@@ -322,6 +322,9 @@ main {
     .notaDos {
         grid-area: notaDos;
     }
+    .tarjetaTexto{
+        margin: 0px;
+    }
 }
 .cuerpo {
     background-color: $bordo;
