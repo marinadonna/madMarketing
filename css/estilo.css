@@ -481,11 +481,11 @@ main .seccionCert .logosCert .certificacionGoogle {
   margin-left: 20px;
 }
 .cuerpo .form-floating {
-  width: 390px;
+  width: 500px;
   margin-top: 15px;
 }
 .cuerpo .form-select {
-  width: 390px;
+  width: 505px;
   margin-left: 9px;
 }
 .cuerpo .origen {
@@ -495,10 +495,7 @@ main .seccionCert .logosCert .certificacionGoogle {
   margin-left: 9px;
 }
 .cuerpo .form-control {
-  width: 390px;
-}
-.cuerpo .empresa {
-  margin-bottom: 40px;
+  width: 500px;
 }
 
 footer {
@@ -860,36 +857,72 @@ footer .redes .whatsapp {
     width: 347px;
   }
   .cuerpo {
-    background-color: #470101;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1;
+    display: flex;
+    grid-auto-columns: 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 0px;
     grid-template-areas: "imagenFormulario" "tituloFormulario" "textoFormulario" "formularioContacto";
     align-items: center;
+    text-align: center;
   }
   .cuerpo .imagenFormulario {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
   .cuerpo .tituloFormulario {
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5rem;
+    text-align: center;
+    position: relative;
   }
   .cuerpo .textoFormulario {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    width: 80%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
   }
   .cuerpo .formularioContacto {
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .cuerpo .form-floating {
+    width: 350px;
+    margin-top: 15px;
+    position: relative;
+    margin-right: 18px;
+  }
+  .cuerpo .form-select {
+    width: 356px;
+    position: relative;
+    margin-right: 5px;
+  }
+  .cuerpo .origen {
+    margin-top: 0px;
+    position: relative;
+  }
+  .cuerpo #formGroupExampleInput3 {
+    margin-left: 9px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .cuerpo .form-control {
+    width: 350px;
+    position: relative;
+  }
+  .cuerpo .empresa {
+    margin-bottom: 15px;
   }
   footer {
     height: 30px;
