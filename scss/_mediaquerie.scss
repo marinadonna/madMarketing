@@ -1,17 +1,164 @@
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.2rem;
+    body {
+        h1 {
+            padding: 20px;
+            padding-top: 20px;
+            font-size: 1.5rem;
+        }
+        h2 {
+            padding-bottom: 40px;
+            color: $blanco;
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+            padding: 20px;
+            padding-top: 55px;
+            padding-bottom: 20px;
+        }
+        h3 {
+            color: $blanco;
+            font-family: "Open Sans", sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+        p {
+            color: $blanco;
+            font-family: "Open Sans", sans-serif;
+        }
+        a {
+            color: $blanco;
+            text-decoration: none;
+            list-style: none;
+            text-align: center;
+        }
+        .contacto {
+            width: 120px;
+            height: 30px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 20px;
+            align-content: center;
+        }
     }
-    .nuestrosClientes {
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "opinionUno"
-            "opinionDos"
-            "opinionTres";
-        .opinionUno, .opinionDos {
-            margin-bottom: 20px;
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .seccionContacto {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "textoContacto"
+                "botonUno";
+            height: 250px;
+            align-items: center;
+            .imagenContacto {
+                width: 50%;
+            }
+            .textoContacto {
+                font-size: 1rem;
+            }
+            .textoQuienes {
+                width: 90%;
+            }
+        }
+        .imagenQuienes {
+            width: 50%;
+        }
+        .nuestrosClientes {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "opinionUno"
+                "opinionDos"
+                "opinionTres";
+            margin-bottom: 40px;
+            .opinionUno {
+                @include opiniones;
+                grid-area: opinionUno;
+                margin-bottom: 20px;
+            }
+            .opinionDos {
+                @include opiniones;
+                grid-area: opinionDos;
+                margin-bottom: 20px;
+            }
+            .opinionTres {
+                @include opiniones;
+                grid-area: opinionTres;
+            }
+            p {
+                padding: 10px;
+                margin: 5px;
+            }
+            .rolling {
+                width: 200px;
+                border: none;
+                border-radius: 2%;
+                padding: 20px;
+                margin: 10px;
+                padding-top: 40px;
+            }
+            .emetres {
+                width: 150px;
+                border: none;
+                border-radius: 50%;
+                padding: 20px;
+                margin: 10px;
+                margin-top: 30px;
+            }
+            .amtae {
+                width: 180px;
+                border: none;
+                border-radius: 0%;
+                padding: 20px;
+                margin: 10px;
+                margin-top: 75px;
+                margin-bottom: 50px;
+            }
+        }
+        .seccionCert {
+            background-color: $bordo;
+            min-width: 100%;
+            .textoCert {
+                width: 90%;
+                margin-left: 0;
+
+            }
+            .logosCert {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+
+                .certificacionMeta {
+                    width: 100px;
+                    padding: 20px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    margin: 10px;
+                    margin-bottom: 40px;
+                }
+                .certificacionGoogle {
+                    width: 100px;
+                    padding: 20px;
+                    margin: 10px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .tituloServicios {
+        height: 200px;
+        min-width: 100%;
+        justify-content: center;
+        padding-top: 20px;
+
+        .flechaAbajo {
+            width: 80px;
         }
     }
     .nuestrosServicios {
@@ -20,25 +167,49 @@
         grid-template-rows: repeat(8, auto);
         gap: 0px 0px;
         grid-template-areas:
-            "textoConsultoria" 
+            "textoConsultoria"
             "consultoria"
-            "textoRedes"
+            "textoRedes "
             "redesSociales"
             "textoDiseño "
             "diseñoWeb"
             "textoMailing"
             "emailing";
-        text-align: center;
-        align-content: center;
-        flex-direction: column;
-        img {
-            margin: 10px;
-            padding: 10px;
-            margin-left: 100px;
+        .consultoria {
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 90%;
+        }
+        .textoConsultoria,
+        .textoRedes,
+        .textoDiseño,
+        .textoMailing {
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .diseñoWeb,
+        .emailing,
+        .redesSociales {
+            width: 50%;
+            margin: 0 auto;
         }
         p {
-            margin: 10px;
-            padding: 10px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        img {
+            margin-left: 0;
+            width: 70%;
+        }
+        .imagenServicio {
+            width: 90%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        h2 {
+            margin-top: 20px;
         }
     }
     .textoCert {
@@ -50,62 +221,85 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "hombre textoContacto"
-            "hombre botonUno";    
+            "hombre botonUno";
         background-size: contain;
         .mujer {
             visibility: hidden;
         }
         .hombre {
-            margin-left: 250px;
+            margin-left: hidden;
         }
         .textoContacto {
             width: 350px;
             margin-top: 30px;
         }
     }
+    .nuestrosTrabajos {
+        height: 280px;
+        min-width: 100%;
+    }
+    .hombreTrabajos {
+        width: 50%;
+    }
     .clientes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .clienteUno, .clienteDos, .clienteTres {
+        .trabajoCliente {
+            width: 90%;
+            margin: 20px auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logoCliente,
+        .logoClienteDos,
+        .logoClienteTres {
+            width: 40%;
+            margin: 0 auto;
+        }
+        .clienteUno,
+        .clienteDos,
+        .clienteTres {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             align-items: center;
-            .trabajoCliente, .trabajoClienteDos, .trabajoClienteTres {
-                width: 600px;
-                margin: 20px;
-                margin-left: 40px;
-                margin-right: 40px;
-            }
+            text-align: center;
         }
     }
     .bannerBlog {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "imagenBlog"
+            "tituloBlog"
+            "textoBlog";
+        align-items: center;
         .imagenBlog {
-            width: 200px;
-            margin: 30px;
-            margin-left: 50px;
+            width: 30%;
+            margin: 0px auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         .tituloBlog {
-            grid-area: tituloBlog;
-            padding: 30px;
-            margin-top: 60px;
-            margin-right: 300px;
+            margin-top: 0px;
+            margin-right: 10px;
+            padding: 0;
         }
         .textoBlog {
-            grid-area: textoBlog;
-            width: 400px;
-            margin-bottom: 70px;
+            width: 90%;
+            margin-bottom: 20px;
+            text-align: center;
         }
     }
     .notas {
-        display: grid;
-        grid-auto-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px;
+        grid-template-rows: auto auto;
         grid-template-areas:
             "notaUno"
             "notaDos";
+
+        .notaUno,
+        .notaDos {
+            width: 10%;
+            margin: auto;
+        }
     }
     .cuerpo {
         background-color: $bordo;
@@ -117,18 +311,29 @@
         grid-template-areas:
             "imagenFormulario"
             "tituloFormulario"
-            "textoFormulario" 
+            "textoFormulario"
             "formularioContacto";
+        .imagenFormulario {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tituloFormulario {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5rem;
+        }
         .textoFormulario {
-            display: flex;
-            align-items: center;
-            justify-self: center;
-            margin-bottom: 30px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
         }
         .formularioContacto {
-            margin-left: 100px;
-            justify-self: center;
-            margin-bottom: 30px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     footer {
@@ -193,6 +398,17 @@
                 padding: 5px;
                 margin: 10px;
             }
+        }
+    }
+    .contactoServicios {
+        min-width: 100%;
+        height: 200px;
+        .trabajemosJuntos {
+            margin-bottom: 20px;
+        }
+        .contacto {
+            width: 150px;
+            height: 50px;
         }
     }
 }
