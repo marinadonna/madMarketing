@@ -883,9 +883,11 @@ footer .redes .whatsapp {
   .cuerpo .formularioContacto {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 300px;
     margin-left: 0px;
     margin-bottom: 10px;
+    margin-right: 40px;
   }
   .cuerpo .form-floating {
     width: 300px;
