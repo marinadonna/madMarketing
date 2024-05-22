@@ -275,7 +275,8 @@
     }
     .notas {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 10px;
         grid-template-areas:
             "notaUno"
             "notaDos";
