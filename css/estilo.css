@@ -623,7 +623,7 @@ footer .redes .whatsapp {
   }
   main .seccionContacto .textoContacto {
     font-size: 1.3rem;
-    width: 90%;
+    width: 88%;
     text-align: center;
     margin-bottom: 0px;
   }
@@ -706,10 +706,11 @@ footer .redes .whatsapp {
   main .seccionCert {
     background-color: #470101;
     min-width: 99%;
+    align-items: center;
   }
   main .seccionCert .textoCert {
-    width: 90%;
-    margin-left: 0;
+    width: 85%;
+    margin-left: 10px;
   }
   main .seccionCert .logosCert {
     display: flex;
@@ -720,8 +721,7 @@ footer .redes .whatsapp {
   main .seccionCert .logosCert .certificacionMeta {
     width: 100px;
     padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
     margin: 10px;
     margin-bottom: 40px;
   }
@@ -729,8 +729,8 @@ footer .redes .whatsapp {
     width: 100px;
     padding: 20px;
     margin: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 40px;
   }
   .tituloServicios {
@@ -785,11 +785,6 @@ footer .redes .whatsapp {
   .nuestrosServicios h2 {
     margin-top: 20px;
   }
-  .textoCert {
-    width: 300px;
-    padding: 10px;
-    margin-left: 80px;
-  }
   .nuestrosTrabajos {
     height: 280px;
     min-width: 100%;
@@ -838,7 +833,7 @@ footer .redes .whatsapp {
     padding: 0;
   }
   .bannerBlog .textoBlog {
-    width: 90%;
+    width: 85%;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -849,12 +844,12 @@ footer .redes .whatsapp {
   }
   .notas .notaUno,
   .notas .notaDos {
-    width: 300px;
+    width: 290px;
     margin: auto;
   }
   .notas .notaUno .imagenNota,
   .notas .notaDos .imagenNota {
-    width: 297px;
+    width: 287px;
   }
   .cuerpo {
     display: flex;
