@@ -705,7 +705,7 @@ footer .redes .whatsapp {
   }
   main .seccionCert {
     background-color: #470101;
-    min-width: 100%;
+    min-width: 99%;
   }
   main .seccionCert .textoCert {
     width: 90%;
@@ -971,7 +971,7 @@ footer .redes .whatsapp {
     margin: 10px;
   }
   .contactoServicios {
-    min-width: 100%;
+    min-width: 99%;
     height: 200px;
   }
   .contactoServicios .trabajemosJuntos {
