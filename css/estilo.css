@@ -844,12 +844,12 @@ footer .redes .whatsapp {
   }
   .notas .notaUno,
   .notas .notaDos {
-    width: 290px;
-    margin: auto;
+    width: 250px;
+    margin: 0px;
   }
   .notas .notaUno .imagenNota,
   .notas .notaDos .imagenNota {
-    width: 287px;
+    width: 247px;
   }
   .cuerpo {
     display: flex;
