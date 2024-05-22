@@ -914,7 +914,6 @@ footer .redes .whatsapp {
     height: 30px;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: auto auto;
     grid-template-rows: repeat(6, 1fr);
     gap: 0px 0px;
     grid-template-areas: "tituloFooter tituloFooter logoFooter" "contactoTelefono telefono logoFooter" "contactoMail mail logoFooter" "redes redes redes";
